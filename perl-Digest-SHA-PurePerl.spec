@@ -1,5 +1,5 @@
 %define	upstream_name	 Digest-SHA-PurePerl
-%define	upstream_version 5.50
+%define	upstream_version 5.61
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
