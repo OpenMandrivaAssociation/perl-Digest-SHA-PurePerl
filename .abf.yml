@@ -1,2 +1,4 @@
+removed_sources:
+  Digest-SHA-PurePerl-5.62.tar.gz: a4e2c44436164c2e8377cc1961525fcb958d99e4
 sources:
-  "Digest-SHA-PurePerl-5.62.tar.gz": a4e2c44436164c2e8377cc1961525fcb958d99e4
+  Digest-SHA-PurePerl-5.85.tar.gz: 40d58e432ca0d7725c2cc15846a44124418e052f
