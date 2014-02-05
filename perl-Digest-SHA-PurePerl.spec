@@ -1,19 +1,18 @@
 %define	upstream_name	 Digest-SHA-PurePerl
-%define upstream_version 5.85
+%define upstream_version 5.86
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 5.85
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Perl implementation of SHA-1/224/256/384/512
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/authors/id/M/MS/MSHELOR/Digest-SHA-PurePerl-5.85.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSHELOR/Digest-SHA-PurePerl-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Digest::SHA::PurePerl is a complete implementation of the NIST
@@ -30,18 +29,15 @@ partial-byte data.
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
-%{__rm} -rf %{buildroot}
 
 %makeinstall_std
 
 %clean 
-%{__rm} -rf %{buildroot}
 
 %files 
-%defattr(-,root,root)
 %doc README
 %{perl_vendorlib}/Digest/SHA/PurePerl.pm
 %{_mandir}/man1/*
@@ -65,6 +61,7 @@ partial-byte data.
 * Thu Jan 07 2010 Emmanuel Andry <eandry@mandriva.org> 5.480.0-1mdv2011.0
 + Revision: 487176
 - import perl-Digest-SHA-PurePerl
+
 
 
 
