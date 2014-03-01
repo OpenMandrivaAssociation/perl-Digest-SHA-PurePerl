@@ -1,5 +1,4 @@
-%define	upstream_name	 Digest-SHA-PurePerl
-%define upstream_version 5.86
+%define	upstream_name	 Digest-SHA-PurePerl%define upstream_version 5.87
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -9,7 +8,7 @@ Summary:	Perl implementation of SHA-1/224/256/384/512
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSHELOR/Digest-SHA-PurePerl-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSHELOR/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 
 BuildArch:	noarch
@@ -61,6 +60,7 @@ partial-byte data.
 * Thu Jan 07 2010 Emmanuel Andry <eandry@mandriva.org> 5.480.0-1mdv2011.0
 + Revision: 487176
 - import perl-Digest-SHA-PurePerl
+
 
 
 
