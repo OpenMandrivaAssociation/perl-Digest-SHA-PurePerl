@@ -1,4 +1,5 @@
-%define	upstream_name	 Digest-SHA-PurePerl%define upstream_version 5.87
+%define	upstream_name	 Digest-SHA-PurePerl
+%define upstream_version 5.88
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -60,6 +61,7 @@ partial-byte data.
 * Thu Jan 07 2010 Emmanuel Andry <eandry@mandriva.org> 5.480.0-1mdv2011.0
 + Revision: 487176
 - import perl-Digest-SHA-PurePerl
+
 
 
 
