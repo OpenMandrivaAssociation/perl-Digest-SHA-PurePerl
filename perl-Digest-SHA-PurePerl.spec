@@ -1,11 +1,12 @@
 %define	upstream_name	 Digest-SHA-PurePerl
-%define upstream_version 5.91
+%define upstream_version 5.92
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Perl implementation of SHA-1/224/256/384/512
+
 
 
 
@@ -46,6 +47,7 @@ partial-byte data.
 %{_mandir}/man1/*
 %{_mandir}/man3/*
 %{_bindir}/*
+
 
 
 
