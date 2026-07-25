@@ -1,9 +1,9 @@
 %define	upstream_name	 Digest-SHA-PurePerl
-%define upstream_version 5.92
+%define upstream_version 6.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Perl implementation of SHA-1/224/256/384/512
 
@@ -12,8 +12,8 @@ Summary:	Perl implementation of SHA-1/224/256/384/512
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSHELOR/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://metacpan.org/dist/Digest-SHA-PurePerl
+Source0:	https://cpan.metacpan.org/authors/id/M/MS/MSHELOR/Digest-SHA-PurePerl-%{upstream_version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 
